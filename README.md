@@ -134,7 +134,7 @@ geo-handbook/
 
 ## 发布与参与
 
-按照 [PUBLISH.md](PUBLISH.md) 新建 `AIPMAndy/geo-handbook` 仓库、上传后选择 GitHub Actions 部署 GitHub Pages。项目尚未发布到公共 GitHub，**“在线网站”属于部署目标地址，而不是已完成上线证明**。
+**GitHub 源码已公开发布**：[`AIPMAndy/geo-handbook`](https://github.com/AIPMAndy/geo-handbook)，106 个源文件已提交到 `main`。GitHub Actions 的重建、内容校验、15 项单测和 JavaScript 检查已通过。**GitHub Pages 仍需仓库管理员在 [Settings → Pages](https://github.com/AIPMAndy/geo-handbook/settings/pages) 选择 `GitHub Actions` 作为 Source**，再重新运行 [Deploy GEO Handbook](https://github.com/AIPMAndy/geo-handbook/actions/workflows/pages.yml)。正式部署成功前，在线网站 URL 仅为预期地址。
 
 项目采用 [MIT 开源协议](LICENSE)。问题反馈可在部署后使用 GitHub Issue，也可以参考 [贡献指南](CONTRIBUTING.md)。提交真实案例请提供可验证来源和使用许可，不要上传未脱敏的客户隐私信息。
 
