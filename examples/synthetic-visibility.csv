@@ -1,0 +1,31 @@
+﻿date,platform,region,phase,question_type,ai_answer_triggered,query,brand_mentioned,owned_url_cited,citation_url,evidence
+2026-10-01,Bing/Copilot,zh-CN/中国大陆,baseline,natural,1,教学模拟问题 01,0,0,,SYNTHETIC-001
+2026-10-01,ChatGPT Search,zh-CN/中国大陆,baseline,natural,1,教学模拟问题 02,0,0,,SYNTHETIC-002
+2026-10-01,Bing/Copilot,zh-CN/中国大陆,baseline,natural,1,教学模拟问题 03,0,0,,SYNTHETIC-003
+2026-10-01,ChatGPT Search,zh-CN/中国大陆,baseline,natural,1,教学模拟问题 04,0,0,,SYNTHETIC-004
+2026-10-01,Bing/Copilot,zh-CN/中国大陆,baseline,natural,1,教学模拟问题 05,1,0,,SYNTHETIC-005
+2026-10-01,ChatGPT Search,zh-CN/中国大陆,baseline,natural,1,教学模拟问题 06,0,0,,SYNTHETIC-006
+2026-10-01,Bing/Copilot,zh-CN/中国大陆,baseline,natural,1,教学模拟问题 07,0,1,https://example.com/article,SYNTHETIC-007
+2026-10-01,ChatGPT Search,zh-CN/中国大陆,baseline,brand,1,教学模拟问题 08,0,0,,SYNTHETIC-008
+2026-10-01,Bing/Copilot,zh-CN/中国大陆,baseline,natural,0,教学模拟问题 09,0,0,,SYNTHETIC-009
+2026-10-01,ChatGPT Search,zh-CN/中国大陆,baseline,natural,1,教学模拟问题 10,1,0,,SYNTHETIC-010
+2026-10-01,Bing/Copilot,zh-CN/中国大陆,baseline,natural,1,教学模拟问题 11,0,0,,SYNTHETIC-011
+2026-10-01,ChatGPT Search,zh-CN/中国大陆,baseline,natural,1,教学模拟问题 12,0,0,,SYNTHETIC-012
+2026-10-01,Bing/Copilot,zh-CN/中国大陆,baseline,natural,1,教学模拟问题 13,0,0,,SYNTHETIC-013
+2026-10-01,ChatGPT Search,zh-CN/中国大陆,baseline,natural,1,教学模拟问题 14,0,1,https://example.com/article,SYNTHETIC-014
+2026-10-01,Bing/Copilot,zh-CN/中国大陆,baseline,natural,1,教学模拟问题 15,1,0,,SYNTHETIC-015
+2026-11-01,ChatGPT Search,zh-CN/中国大陆,after,brand,1,教学模拟问题 16,0,0,,SYNTHETIC-016
+2026-11-01,Bing/Copilot,zh-CN/中国大陆,after,natural,1,教学模拟问题 17,0,0,,SYNTHETIC-017
+2026-11-01,ChatGPT Search,zh-CN/中国大陆,after,natural,0,教学模拟问题 18,0,0,,SYNTHETIC-018
+2026-11-01,Bing/Copilot,zh-CN/中国大陆,after,natural,1,教学模拟问题 19,0,0,,SYNTHETIC-019
+2026-11-01,ChatGPT Search,zh-CN/中国大陆,after,natural,1,教学模拟问题 20,1,0,,SYNTHETIC-020
+2026-11-01,Bing/Copilot,zh-CN/中国大陆,after,natural,1,教学模拟问题 21,0,1,https://example.com/article,SYNTHETIC-021
+2026-11-01,ChatGPT Search,zh-CN/中国大陆,after,natural,1,教学模拟问题 22,0,0,,SYNTHETIC-022
+2026-11-01,Bing/Copilot,zh-CN/中国大陆,after,natural,1,教学模拟问题 23,0,0,,SYNTHETIC-023
+2026-11-01,ChatGPT Search,zh-CN/中国大陆,after,brand,1,教学模拟问题 24,0,0,,SYNTHETIC-024
+2026-11-01,Bing/Copilot,zh-CN/中国大陆,after,natural,1,教学模拟问题 25,1,0,,SYNTHETIC-025
+2026-11-01,ChatGPT Search,zh-CN/中国大陆,after,natural,1,教学模拟问题 26,0,0,,SYNTHETIC-026
+2026-11-01,Bing/Copilot,zh-CN/中国大陆,after,natural,0,教学模拟问题 27,0,0,,SYNTHETIC-027
+2026-11-01,ChatGPT Search,zh-CN/中国大陆,after,natural,1,教学模拟问题 28,0,1,https://example.com/article,SYNTHETIC-028
+2026-11-01,Bing/Copilot,zh-CN/中国大陆,after,natural,1,教学模拟问题 29,0,0,,SYNTHETIC-029
+2026-11-01,ChatGPT Search,zh-CN/中国大陆,after,natural,1,教学模拟问题 30,1,0,,SYNTHETIC-030

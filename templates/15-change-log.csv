@@ -1,0 +1,2 @@
+change_id,date,page_url,change_type,what_changed,why,owner,proof_url,baseline_batch,after_batch,notes
+C-001,2026-11-05,https://example.com/help,content,加入原创证据,回答真实问题,示例负责人,,B1,A1,仅教学示例

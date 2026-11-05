@@ -1,0 +1,2 @@
+﻿test_date,platform,region,language,question_id,exact_question,ai_answer_triggered,brand_mentioned,owned_url_cited,citation_urls,answer_evidence_path,tester,notes
+YYYY-MM-DD,ChatGPT Search,待填,zh-CN,Q01-1,这里填写原始问题,待测,待测,待测,,,待填,示例行，请替换

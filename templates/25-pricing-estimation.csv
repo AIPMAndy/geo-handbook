@@ -1,0 +1,7 @@
+role,hours,internal_cost_per_hour_cny,subtotal_cny,notes
+研究/诊断,0,0,=B2*C2,请填真实投入
+内容/研究,0,0,=B3*C3,请填真实投入
+技术/开发,0,0,=B4*C4,请填真实投入
+项目管理,0,0,=B5*C5,请填真实投入
+质检复测,0,0,=B6*C6,请填真实投入
+TOTAL,,,=SUM(D2:D6),仅人员成本

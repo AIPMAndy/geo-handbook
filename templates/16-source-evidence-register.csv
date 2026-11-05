@@ -1,0 +1,2 @@
+claim_id,claim,source_type,source_url,published_at,checked_at,owner,evidence_file,rights_status,notes
+E-001,某产品使用说明,official,https://example.com/docs,,2026-11-05,示例负责人,,public,仅示例

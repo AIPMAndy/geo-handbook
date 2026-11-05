@@ -1,0 +1,2 @@
+lead_id,created_at,customer_type,first_touch_claim,confirmed_referrer,landing_page,utm_source,utm_medium,utm_campaign,consultation_status,paid_status,revenue_cny,evidence,notes
+DUMMY001,2026-11-05,B2B,客户说来自AI搜索,unverified,https://example.com/services,,,,unknown,unknown,,无,教学样例不是业绩
