@@ -106,7 +106,7 @@ def attach_navigation(text: str, root: str) -> str:
 
 def build_html() -> str:
     index = (DOCS / 'index.html').read_text(encoding='utf-8')
-    marker = re.search(r'<main\\s+id=[\\\'\"]content[\\\'\"]\\s*>', index)
+    marker = re.search(r'<main\s+id=[\'"]content[\'"]\s*>', index)
     if marker is None or '</main>' not in index[marker.end():]:
         raise RuntimeError('Expected site HTML layout unavailable')
     open_main = '<main id="content">'
