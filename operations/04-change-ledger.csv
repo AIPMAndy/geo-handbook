@@ -1,0 +1,2 @@
+event_id,experiment_id,changed_at,site_url,previous_version,new_version,single_variable,change_summary,evidence_url,rollback_instruction,approved_by
+DEMO-CHANGE-01,DEMO-EXP-01,2026-01-10,https://example.com/geo-guide,example-v0,example-v1,answer_structure,演示：为正文补充明确问题与答案,,可恢复上一版,demo-only

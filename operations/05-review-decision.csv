@@ -1,0 +1,2 @@
+review_id,experiment_id,compared_platform,matched_conditions,baseline_valid_samples,retest_valid_samples,baseline_owned_citations,retest_owned_citations,other_changes,decision,decision_reason,reviewed_by
+DEMO-REVIEW-01,DEMO-EXP-01,example-platform,unknown,0,0,0,0,未采集真实数据,insufficient_data,必须补齐有效样本再作判断,demo-only

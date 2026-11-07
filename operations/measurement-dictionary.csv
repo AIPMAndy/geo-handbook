@@ -1,7 +1,0 @@
-metric_id,metric_name,numerator_definition,denominator_definition,source,window,segment,limitations,owner
-VIS01,品牌提及率,有效自然问题样本中提及品牌次数,同平台同条件的已触发有效自然问题样本数,人工保存答案,weekly,platform-region-prompt,不等于推荐或成交,分析负责人
-REC01,明确推荐率,明确向用户推荐品牌的有效样本数,已触发有效自然问题样本数,人工保存答案,weekly,platform-region-prompt,推荐语义需人工核验,分析负责人
-FACT01,描述准确率,已核验且准确的关键品牌事实数,被模型作出的可核验品牌事实总数,事实库与答案,weekly,product-surface,仅限有充足证据可核对的陈述,事实负责人
-CITE01,自有URL引用率,含至少一个可验证自有网址的有效回答数,已触发有效自然问题样本数,引用URL清单,weekly,platform-region-prompt,不等同自然点击,分析负责人
-LEAD01,可追踪有效线索数,由明确可核对路径产生的有效线索,不适用-为计数指标,表单或CRM,monthly,campaign,无法归因的线索单列,销售负责人
-COMP01,同题竞品差异,品牌提及样本率与指定竞品提及样本率差,同平台同条件的有效自然问题样本数,固定问题对照,weekly,platform-region-prompt,样本波动不能证明因果,分析负责人

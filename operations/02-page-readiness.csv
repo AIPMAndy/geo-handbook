@@ -1,0 +1,2 @@
+record_id,experiment_id,url,checked_at,http_status,login_required,robots_directive,canonical_url,answer_visible,first_party_evidence,blocker,checked_by
+DEMO-PAGE-01,DEMO-EXP-01,https://example.com/geo-guide,2026-01-01,not-checked,unknown,unknown,,unknown,unknown,awaiting_real_test,demo-only

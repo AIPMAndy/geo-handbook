@@ -1,0 +1,2 @@
+event_id,experiment_id,event_date,event_type,evidence_id,attribution_method,referring_url,customer_consent,value_if_confirmed,owner,confidence_note
+DEMO-EVENT-01,DEMO-EXP-01,2026-01-22,unverified-example,,unattributed,,not-applicable,0,demo-only,样例不是实际咨询或营收

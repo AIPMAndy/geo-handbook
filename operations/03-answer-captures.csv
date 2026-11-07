@@ -1,0 +1,2 @@
+sample_id,experiment_id,phase,platform,query_version,region,language,search_triggered,sampled_at,answer_file,brand_mentioned,owned_url_cited,citation_url,comparable_to_baseline,reviewer
+DEMO-SAMPLE-01,DEMO-EXP-01,baseline,example-platform,q-v1,example-region,zh-CN,unknown,2026-01-01T10:00:00+08:00,,unknown,unknown,,unknown,demo-only

@@ -1,0 +1,2 @@
+experiment_id,buyer_question,question_source,site_url,primary_metric,platform,baseline_start,baseline_end,retest_start,retest_end,holdout_url,experiment_owner,status
+DEMO-EXP-01,企业如何判断一项GEO项目有没有效果,演示记录无真实来源,https://example.com/geo-guide,owned_url_citation_rate,ChatGPT Search,2026-01-01,2026-01-07,2026-01-15,2026-01-21,,demo-only,draft

@@ -1,2 +1,0 @@
-sample_id,question_id,platform,model,language,region,sampled_at,prompt_version,triggered,brand_search,answer_text_path,brand_mentioned,brand_recommended,claim_correct,cited_urls,competitors,collector,verified
-DEMO-S01,DEMO-Q01,example-platform,example-model,zh-CN,example-region,2026-01-01T09:00:00+08:00,v1,false,false,,false,false,unknown,,,example-recorder,false

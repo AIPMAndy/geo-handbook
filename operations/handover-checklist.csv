@@ -1,5 +1,0 @@
-asset_id,deliverable,format,owner,location,version,approval_state,backup_location,maintenance_cycle,customer_received,notes
-DEMO-H01,已核验品牌事实库,csv,事实负责人,,v0,draft,,monthly,false,演示行不属于已交付资产
-DEMO-H02,页面内容与历史变更,html-md,网站负责人,,v0,draft,,monthly,false,需提供可维护权限和更新方法
-DEMO-H03,采样原始记录与指标字典,csv,分析负责人,,v0,draft,,weekly,false,需包含准确分母和演示标记
-DEMO-H04,权限清单及回滚指引,md,项目负责人,,v0,draft,,quarterly,false,不存储密码
