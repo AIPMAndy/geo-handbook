@@ -1,0 +1,5 @@
+node,task,execution_mode,accountable_owner,approver,evidence_required,approval_required,rollback_method,status
+facts,核验真实对外陈述,human,事实负责人,业务负责人,原始佐证,true,撤回并修改公开内容,pending
+content,依据已确认事实生成初稿,ai-assisted,内容负责人,事实负责人,已审批事实集,true,回退页面版本,pending
+publishing,发布公开页面,human,网站负责人,业务负责人,发布预览与审查记录,true,版本回滚,pending
+monitoring,整理采样与去重,automated-assisted,分析负责人,分析负责人,可审计原始样本,true,撤回错误报告,pending

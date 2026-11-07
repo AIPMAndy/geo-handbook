@@ -1,0 +1,2 @@
+question_id,canonical_question,original_customer_wording,source_type,source_reference,demand_0_5,business_value_0_5,evidence_ready_0_5,current_gap_0_5,effort_0_5,priority_score,owner,status
+DEMO-Q01,企业如何评估AI搜索内容表现,客户口头问法待验证,synthetic,,3,4,3,3,2,31,内容负责人,draft

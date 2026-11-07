@@ -35,6 +35,10 @@ jobs:
           node --check docs/assets/extras.js
           python3 scripts/site_audit.py --file examples/sample-broken.html --json > /tmp/site-audit-example.json
           python3 scripts/geo_report.py examples/synthetic-visibility.csv --json > /tmp/geo-analysis-example.json
+      - name: Build original GEO operating modules
+        run: |
+          python3 scripts/build_operations.py
+          python3 scripts/check_operations.py
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload Pages artifact

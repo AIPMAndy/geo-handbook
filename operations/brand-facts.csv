@@ -1,0 +1,2 @@
+fact_id,subject,claim,claim_type,status,evidence_url,reviewer,verified_on,review_due,public_url,notes
+DEMO-F01,演示服务,服务范围以双方确认的工作说明书为准,scope,pending,,内容负责人,,,,模拟记录不是可直接发布的真实事实

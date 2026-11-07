@@ -1,0 +1,2 @@
+decision_id,channel,customer_stage,question_id,content_asset_url,expected_signal,cost_actual,citations_observed,qualified_leads_observed,decision,decision_reason,review_date,owner
+DEMO-C01,official-website,consideration,DEMO-Q01,,待验证,0,0,0,test,尚未开始正式样本采集,2026-01-31,项目负责人

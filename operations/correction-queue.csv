@@ -1,0 +1,2 @@
+incident_id,observed_at,question_id,answer_excerpt,observed_citation_url,canonical_fact_id,expected_fact,impact_0_5,root_cause,owned_content_url,action,owner,approval_status,retest_due,retest_result,evidence_path
+DEMO-E01,2026-01-01,DEMO-Q01,错误示例未实际采样,,DEMO-F01,待核实,0,unknown,,验证品牌资料后再填写,事实负责人,pending,,not-tested,
