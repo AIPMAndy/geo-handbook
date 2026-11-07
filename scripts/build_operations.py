@@ -106,11 +106,12 @@ def attach_navigation(text: str, root: str) -> str:
 
 def build_html() -> str:
     index = (DOCS / 'index.html').read_text(encoding='utf-8')
-    open_main = '<main id="content">'
-    if open_main not in index or '</main>' not in index:
+    marker = re.search(r'<main\\s+id=[\\\'\"]content[\\\'\"]\\s*>', index)
+    if marker is None or '</main>' not in index[marker.end():]:
         raise RuntimeError('Expected site HTML layout unavailable')
-    head = index.split(open_main, 1)[0]
-    tail = index.split('</main>', 1)[1]
+    open_main = '<main id="content">'
+    head = index[:marker.start()]
+    tail = index[marker.end():].split('</main>', 1)[1]
     head = re.sub(r'<title>.*?</title>', '<title>GEO 实验室｜可复核的 AI 搜索验证 · GEO Handbook</title>', head, count=1)
     head = re.sub(r'<meta name="description" content="[^"]*">',
                   '<meta name="description" content="六个可执行的 GEO 验证实验，包含基线、技术检查、答案采样、最小改动和复测。">', head, count=1)
