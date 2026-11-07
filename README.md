@@ -6,13 +6,17 @@
 
 **让值得被看见的内容，被 AI 找到；让真实的用户问题，变成可核验的商业结果。**
 
-**26 章课程 · 16 个手把手实验 · 6 种行业演练 · 25 套模板 · 30 天执行 · 60 个静态页面 · 3 个额外免费工具 · 对抗式审核**
+**26 章课程 · 16 个手把手实验 · 6 种行业演练 · 25 套模板 · 30 天执行 · 61 个静态页面 · 3 个额外免费工具 · 对抗式审核**
 
-[🌐 在线网站（部署后）](https://aipmandy.github.io/geo-handbook/) · [📍 三分钟上手](GEO_OPERATING_MANUAL.md) · [🧪 实操实验](labs/) · [📚 完整章节](chapters/) · [🧩 下载模板](templates/) · [🔍 官方依据](docs/sources.html) · [🚀 发布说明](PUBLISH.md)
+[🌐 在线网站](https://aipmandy.github.io/geo-handbook/) · [📍 三分钟上手](GEO_OPERATING_MANUAL.md) · [🧪 实操实验](labs/) · [🔬 GEO 实验室](https://aipmandy.github.io/geo-handbook/operations.html) · [📚 完整章节](chapters/) · [🧩 下载模板](templates/) · [🔍 官方依据](docs/sources.html) · [🚀 发布说明](PUBLISH.md)
 
 作者：**AI 酋长 Andy** · [官网](https://metaver.vip/) · 合作联系：微信 `AIPMAndy`
 
 </div>
+
+## GEO 实验室：可复核的实验而不是宣传结论
+
+新增 [六步实验室](https://aipmandy.github.io/geo-handbook/operations.html)：从真实用户问题、网页技术体检、改动前答案记录，到单因素内容修改、同条件复测和商业事件核验。包含六套标记为 DEMO 的 CSV 示例与本地实验记录卡。详情见 [实验说明](operations/README.md) 与 [内容标准](EDITORIAL_STANDARDS.md)。
 
 ## 先看这三个真实事实
 
