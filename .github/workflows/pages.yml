@@ -75,3 +75,33 @@ jobs:
       - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify public Pages resources against build SHA-256
+        run: |
+          python3 - <<'PY'
+          import hashlib, time, urllib.request
+          from pathlib import Path
+          base = 'https://aipmandy.github.io/geo-handbook/'
+          assets = ('index.html', 'handbook.html', 'sources.html',
+                    'sitemap.xml', 'robots.txt', 'downloads/geo-handbook-guide.pdf')
+          for relative in assets:
+              expected = hashlib.sha256((Path('docs') / relative).read_bytes()).hexdigest()
+              last = ''
+              for attempt in range(16):
+                  try:
+                      req = urllib.request.Request(base + relative, headers={'User-Agent': 'GEO-Pages-publication-QA/1.0'})
+                      with urllib.request.urlopen(req, timeout=20) as response:
+                          body = response.read()
+                          status = response.status
+                      actual = hashlib.sha256(body).hexdigest()
+                      if status == 200 and actual == expected:
+                          print(f'PASS HTTP 200 and SHA-256: {base}{relative}')
+                          break
+                      last = f'status={status} actual={actual} expected={expected}'
+                  except Exception as exc:
+                      last = repr(exc)
+                  if attempt < 15:
+                      time.sleep(5)
+              else:
+                  raise SystemExit(f'LIVE PAGE MISMATCH: {base}{relative}: {last}')
+          print('All six public resources match this workflow build.')
+          PY
