@@ -25,20 +25,6 @@ jobs:
           python-version: '3.12'
       - name: Rebuild static content
         run: python3 scripts/build.py
-      - name: Validate build and sources
-        run: python3 scripts/check.py
-      - name: Unit tests
-        run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
-      - name: JavaScript syntax
-        run: |
-          node --check docs/assets/app.js
-          node --check docs/assets/extras.js
-          python3 scripts/site_audit.py --file examples/sample-broken.html --json > /tmp/site-audit-example.json
-          python3 scripts/geo_report.py examples/synthetic-visibility.csv --json > /tmp/geo-analysis-example.json
-      - name: Build original GEO operating modules
-        run: |
-          python3 scripts/build_operations.py
-          python3 scripts/check_operations.py
       - name: Publish searchable, source-linked GEO PDF
         run: |
           sudo apt-get update -qq
@@ -57,6 +43,20 @@ jobs:
           path: artifacts/pdf-qa/
           if-no-files-found: warn
           retention-days: 30
+      - name: Validate build and sources
+        run: python3 scripts/check.py
+      - name: Unit tests
+        run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: JavaScript syntax
+        run: |
+          node --check docs/assets/app.js
+          node --check docs/assets/extras.js
+          python3 scripts/site_audit.py --file examples/sample-broken.html --json > /tmp/site-audit-example.json
+          python3 scripts/geo_report.py examples/synthetic-visibility.csv --json > /tmp/geo-analysis-example.json
+      - name: Build original GEO operating modules
+        run: |
+          python3 scripts/build_operations.py
+          python3 scripts/check_operations.py
       - name: Synchronize the generated PDF to public repository
         run: |
           git config user.name "github-actions[bot]"
