@@ -4,7 +4,7 @@ on:
     branches: [main]
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 concurrency:
@@ -39,6 +39,33 @@ jobs:
         run: |
           python3 scripts/build_operations.py
           python3 scripts/check_operations.py
+      - name: Publish searchable, source-linked GEO PDF
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-noto-cjk libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz0b poppler-utils
+          python -m pip install --disable-pip-version-check weasyprint==68.0 markdown==3.10 pymupdf==1.26.6 pillow==12.0.0
+          python3 scripts/build_pdf.py
+          python3 scripts/pdf_quality_gate.py
+          test -s docs/downloads/geo-handbook-guide.pdf
+          pdfinfo pdf/geo-handbook-guide.pdf | grep -q 'Pages:'
+          pdftotext pdf/geo-handbook-guide.pdf - | grep -q 'AIPMAndy'
+      - name: Archive full-page PDF QA sheets
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: geo-handbook-pdf-qa
+          path: artifacts/pdf-qa/
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Synchronize the generated PDF to public repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pdf/geo-handbook-guide.pdf pdf/edition.json docs/downloads/geo-handbook-guide.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "docs(pdf): publish source-driven GEO edition"
+            git push origin HEAD:main
+          fi
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload Pages artifact
