@@ -138,8 +138,8 @@ def build():
     f=DOCS/'tools.html';html_text=f.read_text(encoding='utf-8')
     toolnav='<div class="container"><div class="panel" style="margin-top:25px"><div class="eyebrow">V2 ADDITIONAL TOOLS</div><h2>新增：真正可以运行的两种工具</h2><div class="actions"><a class="btn" href="diagnose.html">打开网页 HTML 检查 →</a><a class="btn alt" href="measure.html">导入 CSV 分析 →</a><a class="btn alt" href="pricing.html">项目报价测算 →</a></div><p class="tiny">HTML 诊断是本地结构检查；CSV 分析只读你手工采集的真实日志，不会自动爬取 ChatGPT。</p></div></div>'
     f.write_text(html_text.replace('</main>',toolnav+'</main>'),encoding='utf-8')
-    urls=['','index.html','handbook.html','30days.html','tools.html','templates.html','services.html','sources.html','labs.html','cases.html','diagnose.html','measure.html','pricing.html']+[f'lessons/{x[0]}.html' for x in CHAPTERS]+[f'labs/{f.stem}.html' for f in sorted((ROOT/'labs').glob('*.md'))]+[f'cases/{f.stem}.html' for f in sorted((ROOT/'cases').glob('*.md'))]
-    write(DOCS/'sitemap.xml','<?xml version="1.0" encoding="utf-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{SITE+u}</loc></url>\n' for u in urls if u)+'</urlset>\n')
+    urls=['','handbook.html','30days.html','tools.html','templates.html','services.html','sources.html','labs.html','cases.html','diagnose.html','measure.html','pricing.html']+[f'lessons/{x[0]}.html' for x in CHAPTERS]+[f'labs/{f.stem}.html' for f in sorted((ROOT/'labs').glob('*.md'))]+[f'cases/{f.stem}.html' for f in sorted((ROOT/'cases').glob('*.md'))]
+    write(DOCS/'sitemap.xml','<?xml version="1.0" encoding="utf-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'<url><loc>{SITE+u}</loc></url>\n' for u in urls)+'</urlset>\n')
     write(DOCS/'robots.txt','User-agent: *\nAllow: /\n\nSitemap: '+SITE+'sitemap.xml\n# NOTE: GitHub Pages project paths /geo-handbook/robots.txt are not authoritative.\n# Crawlers read the hostname-root /robots.txt. This project file is only a sample.\n')
     print(f'Built {len(CHAPTERS)} lessons, {len(DAYS)} daily tasks, {len(template_files)} templates, {len(pbs)} playbooks + 16 labs + 6 cases + two browser tools.')
 
